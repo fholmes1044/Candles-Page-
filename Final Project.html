@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candle Corner</title>
+    <style>
+        h1{text-align: center; 
+        color: rgb(39, 5, 63); 
+        border-style:dashed; 
+        padding: 10 px;
+        border-radius: 15px;}
+
+        h2{text-align: center; 
+            color:rgb(48, 1, 82);}
+
+        img{display: block; 
+            margin: 0 auto;
+        border-radius: 20px;
+    border: 10px;}
+
+        p{color: rgb(15, 43, 38); 
+            font-size: 17px;
+        font-weight: bold;
+    line-height: 1.5;}
+
+        button{background-color:rgb(207, 123, 63);
+        color: rgb(245, 243, 240);
+        font-size: medium;
+    display: block; 
+    margin:0 auto;
+padding: 5px 10px 5px;
+box-shadow: 5px 5px 10px black;
+transition: all 500ms ease-in-out;
+}
+
+h4{color:rgb(15, 46, 41)}
+
+        ul{font-size: 18px;}
+
+        .built{color:rgb(71, 24, 116); font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+        button:hover{background-color: rgb(97, 5, 97); color: white; cursor: pointer; opacity: 70%;}
+        
+body{background-image: linear-gradient(to top,#9d94a7 0%, #deb887 100%);}
+
+
+a:hover {color: brown;}
+a:visited{color:rgb(64, 55, 121)}
+
+    </style>
+</head>
+<body>
+   <h1> Candles </h1>
+   <h2> Candles are beautiful and relaxing. </h2>
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/554/original/candles.JPG?1649626513"
+   height="400px" width="500" alt="Candles">
+
+   <br>
+   <hr>
+   <p> <em> <strong> Candles are the perfect thing to use to help unwind after a long day. 
+       They can include essential  oils to help ease your mind. They come in scents that can help transport you to various places. 
+   </strong>
+    </em>
+   </p>
+
+   
+   <button> <em> <strong>Join our Candle Contact Club</strong> </em> </button>
+
+
+<h4> <span style="font-style: italic;"> Must Try </span>  Candle Brands</h4>
+
+<ul>    
+<li>
+    <a href="https://copperwingscandleco.com/collections/all" target="_blank"> Copper Wings Candle Co. </a>
+</li>
+
+ <li>
+   <a href="https://forvrmood.com/collections/candles" target="_blank"> Forver Mood </a>
+</li>
+
+<li>
+    <a href="https://www.lagunacandles.com/collections/shop-all-collections" target="_blank"> Laguna Candles </a>
+</li>
+</ul>
+
+
+<div class="built"> <strong> This page was built by <a href="https://www.linkedin.com/in/faith-holmes-54b577230/" target="_blank"> Faith Holmes.</a> 
+</strong></div>
+
+<script>
+    function contact (){let email = prompt ("What is your email?"); 
+                         let thanks = alert ( "We will be in contact soon!");}
+    
+    let candles = prompt ("How many candles do you have?");
+    if(candles <5) {alert ("Time to buy more candles!😊");}
+    else {alert ("What candle will be next?😍")}
+
+    let button = document.querySelector("button");
+    button.addEventListener ("click" , contact)
+</script>
+
+</body>
+</html>
